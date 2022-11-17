@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#FFFFD4"
+    >
+
+    <TextView
+        android:text="Todo Remainder"
+        android:textSize="30dp"
+        android:textColor="#FF55AA"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:textColor="#4CA1F6"
+        android:text="Enter The Content Of Todo .. "
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        />
+
+    <EditText
+        android:id="@+id/title"
+        android:textColor="#7F00FF"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Type here .."/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="#4CA1F6"
+        android:text="Enter The Content Of Todo .. "
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        />
+
+    <EditText
+        android:id="@+id/content"
+        android:textColor="#7F00FF"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:hint="Type here .. "
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="Remainder Todo  "
+        android:textColor="#4CA1F6"
+
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/option"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:entries="@array/remaind"
+        />
+
+
+
+    <Switch
+        android:layout_marginTop="30dp"
+        android:id="@+id/swAdd"
+        android:text="Do you want to view this todo ? "
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        />
+
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="300dp"
+            android:textColor="#7F00FF"
+            android:layout_height="wrap_content"
+            android:id="@+id/textScroll"
+            android:layout_gravity="center"
+            />
+    </ScrollView>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/clear"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Clear Todo Info"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
